@@ -1,35 +1,51 @@
 {
   "name": "taskpro-frontend-team2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Frontend-ul aplicației TaskPro",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CristianF09/TaskPro-Frontend-Team2.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "CristianF09",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/CristianF09/TaskPro-Frontend-Team2/issues"
   },
   "homepage": "https://github.com/CristianF09/TaskPro-Frontend-Team2#readme",
   "dependencies": {
-    "bcrypt": "^5.1.1",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "jsonwebtoken": "^9.0.2",
-    "pg": "^8.13.3",
-    "pg-hstore": "^2.3.4",
-    "sequelize": "^6.37.5"
+    "axios": "^1.8.1",
+    "formik": "^2.4.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.29.0",
+    "react-scripts": "5.0.1",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
     "nodemon": "^3.1.9"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
